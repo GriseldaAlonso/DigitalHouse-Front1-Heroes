@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Heroes: Añadir</title>
+  </head>
+  <body>
+    <header class="header">
+      <h4>20% de descuento en todos los productos!</h4>
+      <h1>Heroes</h1>
+      <nav>
+        <ul>
+          <li><a href="">Contacto</a></li>
+          <li><a href="">Registrarse</a></li>
+          <li><a href="">Ingresar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="">
+        <div>
+          <h2>Añadí tu super!</h2>
+          <h4>Agregá tu personaje favorito completando las opciones.</h4>
+        </div>
+        <section class="sections">
+          <div class="subsection">
+            <label for="nombre">*Nombre</label><br>
+            <input type="text" name="nombre" id="name" required="required" />
+          </div>
+          <div class="subsection">
+            <label for="especie">*Especie</label><br>
+            <select name="especie" id="especie" required="required">
+              <option value="unknow">Desconocido</option>
+              <option value="metahuman">Metahumano</option>
+              <option value="human">Humano</option>
+          </div>
+          </select>
+        </section>
+        <section class="sections">
+          <div class="subsection">
+            <label for="fecha">Fecha</label><br>
+            <input type="date" name="fecha" id="fecha" />
+          </div>
+          <div class="subsection file">
+            <label for="foto">Agregar foto</label><br>
+            <input type="file" name="foto" id="foto" accept=".jpg, .png"/>
+          </div>
+        </section>
+        <section class="sections">
+          <div class="subsection">
+            <textarea
+            name="descripcion"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Descripción"
+            ></textarea>
+          </div>
+          <div class="subsection">
+            <div class="poderes">
+              <p>Poderes</p>
+              <label for="poderVolar"
+                ><input
+                  type="checkbox"
+                  name="poderVolar"
+                  id="volar"
+                />Volar</label
+              ><br />
+              <label for="poderSuperInteligencia"
+                ><input
+                  type="checkbox"
+                  name="poderSuperInteligencia"
+                  id="superInteligencia"
+                />SuperInteligencia</label
+              ><br />
+              <label for="poderRayoLaser"
+                ><input
+                  type="checkbox"
+                  name="poderRayoLaser"
+                  id="rayoLaser"
+                />Vista de rayo láser</label
+              ><br />
+              <label for="poderBilleteraGorda"
+                ><input
+                  type="checkbox"
+                  name="poderBilleteraGorda"
+                  id="billeteraGorda"
+                />Billetera gorda</label
+              ><br />
+            </div>
+            <hr />
+            <div class="tipos">
+              <p>Tipo de personaje</p>
+              <label for="heroes"
+                ><input type="radio" name="heroes" id="heroes" />Héroe /
+                Heroina</label
+              ><br />
+              <label for="villanos"
+                ><input type="radio" name="villanos" id="villanos" />Villano /
+                Villana</label
+              ><br />
+            </div>
+          </div>
+        </section>
+        <button>Añadir</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+  </body>
+</html>
