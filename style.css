@@ -33,6 +33,7 @@ a{
 .header h4,
 .header h1 {
   padding: 10px;
+  text-align: left;
 }
 
 .header h4 {
@@ -151,7 +152,7 @@ form h2, h4{
   width: 100%;
 }
 
-h4{
+h5{
   font-weight: normal;
   margin: 10px;
 }
@@ -212,11 +213,13 @@ form button{
   align-self: center;
 }
 
-.tipos, .poderes{
+.tipos, 
+.poderes{
   margin: 10px 0px 10px;
 }
 
-.tipos p, .poderes p{
+.tipos p, 
+.poderes p{
   margin: 5px 0px 5px;
 }
 
